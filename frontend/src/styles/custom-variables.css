@@ -1,0 +1,8 @@
+:root {
+  --color-primary: #0d6efd;
+  --color-info: #7acddb;
+}
+
+body * .z_10 {
+  z-index: 10;
+}

@@ -1,0 +1,17 @@
+@keyframes blinkButton {
+  0% {
+    background-color: var(--color-info);
+  }
+  25% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--color-info);
+  }
+  75% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: var(--color-info);
+  }
+}

@@ -1,0 +1,307 @@
+{
+	"abi": [
+		{
+			"inputs": [
+				{ "internalType": "address", "name": "host", "type": "address" },
+				{ "internalType": "address", "name": "cfa", "type": "address" }
+			],
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"internalType": "address",
+					"name": "previousOwner",
+					"type": "address"
+				},
+				{
+					"indexed": true,
+					"internalType": "address",
+					"name": "newOwner",
+					"type": "address"
+				}
+			],
+			"name": "OwnershipTransferred",
+			"type": "event"
+		},
+		{
+			"inputs": [
+				{ "internalType": "address", "name": "_employeeAddress", "type": "address" },
+				{ "internalType": "uint256", "name": "_salary", "type": "uint256" },
+				{ "internalType": "uint256", "name": "_paymentInterval", "type": "uint256" }
+			],
+			"name": "_addemployee",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{ "internalType": "uint8", "name": "_payType", "type": "uint8" },
+				{ "internalType": "address", "name": "_companyAddress", "type": "address" },
+				{ "internalType": "uint8", "name": "_origin", "type": "uint8" }
+			],
+			"name": "_createCompany",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "_keeper", "type": "address" }],
+			"name": "addAdmin",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "_idaCon", "type": "address" }],
+			"name": "addIdaContract",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "_to", "type": "address" }],
+			"name": "closeStream",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{ "internalType": "uint128", "name": "_percentage", "type": "uint128" },
+				{ "internalType": "uint256", "name": "_frequency", "type": "uint256" },
+				{ "internalType": "string", "name": "_asset", "type": "string" }
+			],
+			"name": "createIvestmentPosition",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "_employee", "type": "address" }],
+			"name": "getEmployeeFlowRate",
+			"outputs": [{ "internalType": "int96", "name": "", "type": "int96" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "_employee", "type": "address" }],
+			"name": "getEmployeeIndex",
+			"outputs": [{ "internalType": "uint256", "name": "index", "type": "uint256" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "getPeriodicEmployee",
+			"outputs": [{ "internalType": "uint256", "name": "len", "type": "uint256" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "_company", "type": "address" }],
+			"name": "getTotalCompanyEmployees",
+			"outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "getTotalInvestors",
+			"outputs": [{ "internalType": "uint256", "name": "number", "type": "uint256" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "_company", "type": "address" }],
+			"name": "getTotalPaying",
+			"outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "loans",
+			"outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{ "internalType": "address", "name": "recepient", "type": "address" },
+				{ "internalType": "address", "name": "token", "type": "address" }
+			],
+			"name": "makeInvestmentDeposit",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{ "internalType": "address", "name": "_to", "type": "address" },
+				{ "internalType": "int96", "name": "_flowRate", "type": "int96" }
+			],
+			"name": "openStream",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "owner",
+			"outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+			"name": "periodicEmployees",
+			"outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{ "internalType": "address", "name": "to", "type": "address" },
+				{ "internalType": "int96", "name": "flowRate", "type": "int96" }
+			],
+			"name": "reduceFlow",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "_employee", "type": "address" }],
+			"name": "removeEmployee",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "renounceOwnership",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "string", "name": "", "type": "string" }],
+			"name": "s_assetAddress",
+			"outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{ "internalType": "address", "name": "", "type": "address" },
+				{ "internalType": "uint256", "name": "", "type": "uint256" }
+			],
+			"name": "s_companyEmployees",
+			"outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "", "type": "address" }],
+			"name": "s_companyInfo",
+			"outputs": [
+				{ "internalType": "address", "name": "_address", "type": "address" },
+				{ "internalType": "bool", "name": "status", "type": "bool" },
+				{
+					"internalType": "enum TrustCFA.PAYTYPE",
+					"name": "paymentType",
+					"type": "uint8"
+				},
+				{ "internalType": "uint256", "name": "totalPaying", "type": "uint256" },
+				{ "internalType": "enum TrustCFA.ORIGIN", "name": "origin", "type": "uint8" }
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+			"name": "s_investingAddresses",
+			"outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+			"name": "s_loanpositions",
+			"outputs": [
+				{ "internalType": "address", "name": "employee", "type": "address" },
+				{ "internalType": "uint256", "name": "startTime", "type": "uint256" },
+				{ "internalType": "uint256", "name": "amount", "type": "uint256" },
+				{ "internalType": "uint256", "name": "endTime", "type": "uint256" }
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{ "internalType": "uint256", "name": "amount", "type": "uint256" },
+				{ "internalType": "uint256", "name": "endTime", "type": "uint256" }
+			],
+			"name": "sellStream",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "stopInvestmentPosition",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "newOwner", "type": "address" }],
+			"name": "transferOwnership",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "_company", "type": "address" }],
+			"name": "viewCompanyInfo",
+			"outputs": [
+				{ "internalType": "address", "name": "_address", "type": "address" },
+				{ "internalType": "bool", "name": "status", "type": "bool" },
+				{ "internalType": "enum TrustCFA.PAYTYPE", "name": "payType", "type": "uint8" },
+				{ "internalType": "uint256", "name": "totalPaying", "type": "uint256" }
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "_employee", "type": "address" }],
+			"name": "viewEmployeeInfo",
+			"outputs": [
+				{ "internalType": "uint256", "name": "salary", "type": "uint256" },
+				{ "internalType": "address", "name": "employer", "type": "address" },
+				{ "internalType": "uint256", "name": "startTime", "type": "uint256" },
+				{ "internalType": "uint256", "name": "paymentInterval", "type": "uint256" }
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "_investor", "type": "address" }],
+			"name": "viewInvestment",
+			"outputs": [
+				{ "internalType": "bool", "name": "isActive", "type": "bool" },
+				{ "internalType": "uint256", "name": "startTime", "type": "uint256" },
+				{ "internalType": "uint128", "name": "percentage", "type": "uint128" },
+				{ "internalType": "uint256", "name": "frequency", "type": "uint256" },
+				{ "internalType": "uint256", "name": "amountAccumunated", "type": "uint256" },
+				{ "internalType": "address", "name": "asset", "type": "address" }
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
+}

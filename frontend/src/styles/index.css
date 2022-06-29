@@ -1,0 +1,141 @@
+@import url(./components/scrollbar.css);
+@import url(./custom-variables.css);
+@import url(./components/animations.css);
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.full_height {
+  height: 100vh;
+}
+
+.custom_sidebar {
+  width: 280px;
+  height: 100vh;
+}
+
+.custom_body {
+  width: calc(100% - 280px);
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.card_shadow {
+  box-shadow: 0 0.5rem 1rem #99999930;
+}
+
+.table_head th {
+  color: #5e8cce;
+  font-weight: 600;
+}
+
+.table_item td {
+  color: #5e8cce;
+}
+
+.hero_img {
+  position: relative;
+  animation: moveUpAndDown 2.5s ease alternate infinite;
+}
+
+@keyframes moveUpAndDown {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: 0px;
+    top: 30px;
+  }
+}
+
+.payment_tab button.nav-link {
+  border: none !important;
+}
+
+.payment_tab button.nav-link.active {
+  border-bottom: 2px solid var(--color-primary) !important;
+}
+
+.cursor_pointer {
+  cursor: pointer !important;
+}
+
+.payment_card {
+  max-height: 420px;
+}
+
+.address_card {
+  max-height: 350px;
+}
+
+.hero_bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* max-height: 93vh; */
+}
+
+.personal_bg {
+  background-image: url("../assets/images/hero_2.png");
+}
+
+.business_bg {
+  background-image: url("../assets/images/bbackground.png");
+}
+
+.hero_bg::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.267);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero_button {
+  background-color: #fff;
+  transition: all .3s ease;
+}
+
+.hero_button:hover {
+  background-color: var(--color-info);
+  color: #fff;
+}
+
+.hero_button.selected {
+  color: #fff;
+  background-color: var(--color-info);
+}
+
+a.nav-link.active .hero_button {
+  color: #fff;
+  animation: blinkButton 1s linear;
+  background-color: var(--color-info);
+}
+
+img.core_adv {
+  width: 9rem;
+  height: 6rem;
+}
+
+.pricing_list {
+  list-style: none;
+}
+
+.pricing_image {
+  height: 3rem;
+  width: 3rem;
+  object-fit: contain;
+}
+
+.partner_image {
+  height: 10rem;
+  width: 5rem;
+  object-fit: contain;
+}
