@@ -27,7 +27,7 @@ export default function Hero({ isBusinessMode }) {
               <Nav onSelect={() => setOptionSelected.on()} variant="pills" className="d-inline">
                 <Nav.Item>
                   <Nav.Link className="bg-transparent" eventKey="link-1">
-                    <div className="text-left hero_button p-2 border border-dark border-1">
+                    <div className="text-left hero_button p-2 border border-dark border-1 rounded">
                       <div className="d-flex px-5 align-items-center">
                         {" "}
                         <img
@@ -43,7 +43,7 @@ export default function Hero({ isBusinessMode }) {
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link className="bg-transparent" eventKey="link-2">
-                    <div className="text-left hero_button p-2 border border-dark border-1">
+                    <div className="text-left hero_button p-2 border border-dark border-1 rounded">
                       <div className="d-flex px-5 align-items-center">
                         {" "}
                         <img
@@ -59,7 +59,7 @@ export default function Hero({ isBusinessMode }) {
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link className="bg-transparent" eventKey="link-3">
-                    <div className="text-left hero_button p-2 border border-dark border-1">
+                    <div className="text-left hero_button p-2 border border-dark border-1 rounded">
                       <div className="d-flex px-5 align-items-center">
                         {" "}
                         <img
@@ -76,12 +76,12 @@ export default function Hero({ isBusinessMode }) {
               </Nav>
               <Row className="my-4 px-3">
                 <Col>
-                  <Button onClick={handleWalletConnect} disabled={!selectOption} className="w-100 rounded-0" variant="primary" size="lg">
+                  <Button onClick={handleWalletConnect} disabled={!selectOption} className="w-100 rounded" variant="primary" size="lg">
                     Get Started
                   </Button>
                 </Col>
                 <Col>
-                  <Button className="w-100 rounded-0" variant="light" size="lg">
+                  <Button className="w-100 rounded" variant="light" size="lg">
                     Learn More
                   </Button>
                 </Col>

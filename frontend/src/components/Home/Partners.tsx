@@ -27,7 +27,7 @@ export default function Partners() {
   return (
     <Container>
       <div className="text-center">
-        <h2 className="p-3 mt-5">Partners</h2>
+        <h1 className="p-3 mt-5 text-primary">Partners</h1>
       </div>
       <Row className="d-flex px-3">
         {

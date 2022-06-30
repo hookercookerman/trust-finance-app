@@ -33,19 +33,18 @@ const advantageText = [
 
 export default function Advantages() {
   return (
-    <Container className="p-4">
-      <div className="top-50 end-50 text-center p-4">
-        <h2>Core Advantages</h2>
-        <p> You can be DAO members, freelancers, gig workers</p>
+    <Container className="p-4 align-content-center items-center text-center">
+      <div className="top-50 end-50 text-center p-4 text-primary">
+        <h1>Core Advantages</h1>
       </div>
       <Row className="d-flex p-5">
         {
           advantageText.map((advantage) => (
             <Col md={3} sm={12} key={advantage.id}>
-              <Card className="border-0">
-                <Card.Img variant="top" src={advantage.img} className="core_adv" />
+              <Card className="border-0 ">
+                <Card.Img variant="top" src={advantage.img} className="core_adv mx-auto" />
                 <Card.Body className="p-0">
-                  <Card.Title className="my-4 fs-6">{advantage.title}</Card.Title>
+                  <Card.Title className="my-4 fs-6 p-3">{advantage.title}</Card.Title>
                   <Card.Text className="pe-4">
                     {advantage.description}
                   </Card.Text>

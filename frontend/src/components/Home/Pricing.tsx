@@ -30,8 +30,8 @@ const pricingRanges = [
 export default function Pricing() {
   return (
     <div className="pricing_hero p-4 mb-5">
-      <div className="top-50 end-50 text-center p-2">
-        <h2>Pricing</h2>
+      <div className="top-50 end-50 text-center p-3 text-primary">
+        <h1>Pricing</h1>
       </div>
 
       <Container>
