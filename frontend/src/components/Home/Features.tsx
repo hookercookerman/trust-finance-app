@@ -3,8 +3,48 @@ import { motion } from "framer-motion";
 import {AiOutlineStock} from "react-icons/ai";
 import {RiSecurePaymentLine} from "react-icons/ri";
 import {MdOutlineManageAccounts} from "react-icons/md";
+import {FaExchangeAlt} from "react-icons/fa";
+import {GiTakeMyMoney} from "react-icons/gi";
+import {FcCurrencyExchange} from "react-icons/fc";
 
-export default function Features() {
+export default function Features({isBusinessMode}) {
+
+  const BusinessFeatures = [
+    { id: 1,
+      title: "PAYMENT",
+      icon: <RiSecurePaymentLine className = "w-25 h-25" style = {{color: "#0d6efd"}}/>,
+      description: " We provide easy payroll payments and management for you business, reducting gas fee and time."
+    },
+    {id: 2,
+      title: "Benefits",
+      icon: <AiOutlineStock className = "w-25 h-25" style = {{color: "#0d6efd"}}/>,
+      description: "Attract the best talents through our innovative real time investing matching and yield generation from income."
+    },
+    {id: 3,
+      title: "Accounting",
+      icon: <MdOutlineManageAccounts className = "w-25 h-25" style = {{color: "#0d6efd"}}/>,
+      description: "Enhance growth and compliance through real time automated transaction tracking, accounting and reporting."
+    },
+  ];
+
+  const PersonalFeatures = [
+    { id: 1,
+      title: "Real Time Staking",
+      icon: <FcCurrencyExchange className = "w-25 h-25" style = {{color: "#0d6efd"}}/>,
+      description: " We provide easy payroll payments and management for you business, reducting gas fee and time.",
+    },
+    {id: 2,
+      title: "Access to Rewards",
+      icon: <GiTakeMyMoney className = "w-25 h-25" style = {{color: "#0d6efd"}} />,
+      description: "Attract the best talents through our innovative real time investing matching and yield generation from income.",
+    },
+    {id: 3,
+      title: "Easy Payout",
+      icon: <FaExchangeAlt className = "w-25 h-25" style = {{color: "#0d6efd"}} />,
+      description: "Enhance growth and compliance through real time automated transaction tracking, accounting and reporting.",
+    },
+  ];
+
   return (
     <Container className = "text-center">
       <Row className="mt-5 ms-4">
@@ -23,19 +63,40 @@ export default function Features() {
         </Col>
       </Row>
       <Row className="d-flex p-3">
-        <Col md={4} sm={12}>
+        { 
+        isBusinessMode ?
+        BusinessFeatures.map((features) => (
+        <Col md={4} sm={12} key={features.id}>
           <motion.div className ="w-75 h-100 rounded p-2" whileHover={{scale: 1.1, textShadow: "0px 0px 8px rgb(255, 255, 255)", boxShadow: "3px 3px 8px" }}>
           <Card className="border-0">
             <Card.Body>
-              <Card.Title className="mb-4">PAYMENT</Card.Title>
-              <RiSecurePaymentLine className = "w-25 h-25" style = {{color: "#0d6efd"}}/>
+              <Card.Title className="mb-4">{features.title}</Card.Title>
+              {features.icon}
               <Card.Text className="p-3">
-                We provide easy payroll payments and management for you business, reducting gas fee and time.
+               {features.description}
               </Card.Text>
             </Card.Body>
           </Card>
           </motion.div>
         </Col>
+        )) :
+        PersonalFeatures.map((features) => (
+          <Col md={4} sm={12} key={features.id}>
+            <motion.div className ="w-75 h-100 rounded p-2" whileHover={{scale: 1.1, textShadow: "0px 0px 8px rgb(255, 255, 255)", boxShadow: "3px 3px 8px" }}>
+            <Card className="border-0">
+              <Card.Body>
+                <Card.Title className="mb-4">{features.title}</Card.Title>
+                {features.icon} 
+                <Card.Text className="p-3">
+                 {features.description}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            </motion.div>
+          </Col>
+          ))
+}
+{/*
         <Col md={4} sm={12}>
         <motion.div className ="w-75 h-100 rounded p-2" whileHover={{scale: 1.1, textShadow: "0px 0px 8px rgb(255, 255, 255)", boxShadow: "3px 3px 8px" }}>
           <Card className="border-0">
@@ -63,6 +124,7 @@ export default function Features() {
           </Card>
           </motion.div>
         </Col>
+*/}
       </Row>
     </Container>
   );

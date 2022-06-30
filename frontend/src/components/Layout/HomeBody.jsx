@@ -14,7 +14,7 @@ export default function HomeBody() {
     <>
       <Hero isBusinessMode={isBusinessMode} />
       <Partners />
-      <Features />
+      <Features isBusinessMode = {isBusinessMode}/>
       <Advantages />
       <Pricing />
     </>
