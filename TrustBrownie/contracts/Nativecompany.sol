@@ -203,19 +203,19 @@ contract NativeCompany is SuperAppBase, ReentrancyGuard {
         returns (bytes memory newCtx)
     {
         ISuperfluid.Context memory dContext = _host.decodeCtx(_ctx);
-        address[] memory decodedUserData = abi.decode(
-            dContext.userData,
-            (address[])
-        );
-        uint256 numberOfAddresses = decodedUserData.length;
         address sender = dContext.msgSender;
-        if (numberOfAddresses != 0) {
-            for (uint256 i = 0; i < numberOfAddresses; i++) {
-                int96 _flowRate = trustContract.getEmployeeFlowRate(
-                    sender,
-                    decodedUserData[i]
-                );
-                trustContract.openStream(decodedUserData[i], _flowRate);
+        ITrust.Updateables memory updates = trustContract.getUpdateables(
+            sender
+        );
+
+        if (updates.isUpdatable) {
+            address[] memory _toBeUpdated = updates._addresses;
+            int96[] memory _amountUpdates = updates._updates;
+            uint256 _updateNumber = _toBeUpdated.length;
+            for (uint256 i = 0; i < _updateNumber; i++) {
+                int96 _flowRate = _amountUpdates[i];
+                address _user = _toBeUpdated[i];
+                trustContract.openStream(_user, _flowRate);
             }
         }
         return _updateOutflow(_ctx);

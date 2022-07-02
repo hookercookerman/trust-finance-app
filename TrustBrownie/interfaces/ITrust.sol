@@ -15,6 +15,12 @@ interface ITrust {
         bool isOneTime;
     }
 
+    struct Updateables {
+        bool isUpdatable;
+        address[] _addresses;
+        int96[] _updates;
+    }
+
     function openStream(address _to, int96 _flowrate) external;
 
     function closeStream(address _to) external;
@@ -63,4 +69,9 @@ interface ITrust {
         external
         view
         returns (EmployeeInfo memory);
+
+    function getUpdateables(address _employer)
+        external
+        view
+        returns (Updateables memory _updates);
 }

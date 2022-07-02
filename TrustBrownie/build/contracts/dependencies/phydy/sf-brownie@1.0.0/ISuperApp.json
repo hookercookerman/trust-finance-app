@@ -259,18 +259,18 @@
     "absolutePath": "/home/phydy/.brownie/packages/phydy/sf-brownie@1.0.0/interfaces/superfluid/ISuperApp.sol",
     "exportedSymbols": {
       "ISuperApp": [
-        7247
+        7304
       ],
       "ISuperToken": [
-        6497
+        6554
       ]
     },
-    "id": 7248,
+    "id": 7305,
     "license": "AGPLv3",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7135,
+        "id": 7192,
         "literals": [
           "solidity",
           ">=",
@@ -283,20 +283,20 @@
       {
         "absolutePath": "/home/phydy/.brownie/packages/phydy/sf-brownie@1.0.0/interfaces/superfluid/ISuperToken.sol",
         "file": "./ISuperToken.sol",
-        "id": 7137,
+        "id": 7194,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 7248,
-        "sourceUnit": 6498,
+        "scope": 7305,
+        "sourceUnit": 6555,
         "src": "61:48:12",
         "symbolAliases": [
           {
             "foreign": {
-              "id": 7136,
+              "id": 7193,
               "name": "ISuperToken",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 6497,
+              "referencedDeclaration": 6554,
               "src": "70:11:12",
               "typeDescriptions": {}
             },
@@ -312,15 +312,15 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 7138,
+          "id": 7195,
           "nodeType": "StructuredDocumentation",
           "src": "111:136:12",
           "text": " @title SuperApp interface\n @author Superfluid\n @dev Be aware of the app being jailed, when the word permitted is used."
         },
         "fullyImplemented": false,
-        "id": 7247,
+        "id": 7304,
         "linearizedBaseContracts": [
-          7247
+          7304
         ],
         "name": "ISuperApp",
         "nameLocation": "258:9:12",
@@ -328,13 +328,13 @@
         "nodes": [
           {
             "documentation": {
-              "id": 7139,
+              "id": 7196,
               "nodeType": "StructuredDocumentation",
               "src": "275:622:12",
               "text": " @dev Callback before a new agreement is created.\n @param superToken The super token used for the agreement.\n @param agreementClass The agreement class address.\n @param agreementId The agreementId\n @param agreementData The agreement data (non-compressed)\n @param ctx The context data.\n @return cbdata A free format in memory data the app can use to pass\n          arbitary information to the after-hook callback.\n NOTE:\n - It will be invoked with `staticcall`, no state changes are permitted.\n - Only revert with a \"reason\" is permitted."
             },
             "functionSelector": "30d9c915",
-            "id": 7155,
+            "id": 7212,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -342,38 +342,38 @@
             "nameLocation": "911:22:12",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7151,
+              "id": 7208,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7142,
+                  "id": 7199,
                   "mutability": "mutable",
                   "name": "superToken",
                   "nameLocation": "955:10:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7155,
+                  "scope": 7212,
                   "src": "943:22:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$6497",
+                    "typeIdentifier": "t_contract$_ISuperToken_$6554",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
-                    "id": 7141,
+                    "id": 7198,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 7140,
+                      "id": 7197,
                       "name": "ISuperToken",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 6497,
+                      "referencedDeclaration": 6554,
                       "src": "943:11:12"
                     },
-                    "referencedDeclaration": 6497,
+                    "referencedDeclaration": 6554,
                     "src": "943:11:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$6497",
+                      "typeIdentifier": "t_contract$_ISuperToken_$6554",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -381,12 +381,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7144,
+                  "id": 7201,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nameLocation": "983:14:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7155,
+                  "scope": 7212,
                   "src": "975:22:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -395,7 +395,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7143,
+                    "id": 7200,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "975:7:12",
@@ -409,12 +409,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7146,
+                  "id": 7203,
                   "mutability": "mutable",
                   "name": "agreementId",
                   "nameLocation": "1015:11:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7155,
+                  "scope": 7212,
                   "src": "1007:19:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -423,7 +423,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7145,
+                    "id": 7202,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1007:7:12",
@@ -436,12 +436,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7148,
+                  "id": 7205,
                   "mutability": "mutable",
                   "name": "agreementData",
                   "nameLocation": "1051:13:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7155,
+                  "scope": 7212,
                   "src": "1036:28:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -450,7 +450,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7147,
+                    "id": 7204,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1036:5:12",
@@ -463,12 +463,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7150,
+                  "id": 7207,
                   "mutability": "mutable",
                   "name": "ctx",
                   "nameLocation": "1089:3:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7155,
+                  "scope": 7212,
                   "src": "1074:18:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -477,7 +477,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7149,
+                    "id": 7206,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1074:5:12",
@@ -492,17 +492,17 @@
               "src": "933:165:12"
             },
             "returnParameters": {
-              "id": 7154,
+              "id": 7211,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7153,
+                  "id": 7210,
                   "mutability": "mutable",
                   "name": "cbdata",
                   "nameLocation": "1159:6:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7155,
+                  "scope": 7212,
                   "src": "1146:19:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -511,7 +511,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7152,
+                    "id": 7209,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1146:5:12",
@@ -525,7 +525,7 @@
               ],
               "src": "1145:21:12"
             },
-            "scope": 7247,
+            "scope": 7304,
             "src": "902:265:12",
             "stateMutability": "view",
             "virtual": false,
@@ -533,13 +533,13 @@
           },
           {
             "documentation": {
-              "id": 7156,
+              "id": 7213,
               "nodeType": "StructuredDocumentation",
               "src": "1173:571:12",
               "text": " @dev Callback after a new agreement is created.\n @param superToken The super token used for the agreement.\n @param agreementClass The agreement class address.\n @param agreementId The agreementId\n @param agreementData The agreement data (non-compressed)\n @param cbdata The data returned from the before-hook callback.\n @param ctx The context data.\n @return newCtx The current context of the transaction.\n NOTE:\n - State changes is permitted.\n - Only revert with a \"reason\" is permitted."
             },
             "functionSelector": "d86ed3e5",
-            "id": 7174,
+            "id": 7231,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -547,38 +547,38 @@
             "nameLocation": "1758:21:12",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7170,
+              "id": 7227,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7159,
+                  "id": 7216,
                   "mutability": "mutable",
                   "name": "superToken",
                   "nameLocation": "1801:10:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7174,
+                  "scope": 7231,
                   "src": "1789:22:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$6497",
+                    "typeIdentifier": "t_contract$_ISuperToken_$6554",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
-                    "id": 7158,
+                    "id": 7215,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 7157,
+                      "id": 7214,
                       "name": "ISuperToken",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 6497,
+                      "referencedDeclaration": 6554,
                       "src": "1789:11:12"
                     },
-                    "referencedDeclaration": 6497,
+                    "referencedDeclaration": 6554,
                     "src": "1789:11:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$6497",
+                      "typeIdentifier": "t_contract$_ISuperToken_$6554",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -586,12 +586,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7161,
+                  "id": 7218,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nameLocation": "1829:14:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7174,
+                  "scope": 7231,
                   "src": "1821:22:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -600,7 +600,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7160,
+                    "id": 7217,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1821:7:12",
@@ -614,12 +614,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7163,
+                  "id": 7220,
                   "mutability": "mutable",
                   "name": "agreementId",
                   "nameLocation": "1861:11:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7174,
+                  "scope": 7231,
                   "src": "1853:19:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -628,7 +628,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7162,
+                    "id": 7219,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1853:7:12",
@@ -641,12 +641,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7165,
+                  "id": 7222,
                   "mutability": "mutable",
                   "name": "agreementData",
                   "nameLocation": "1897:13:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7174,
+                  "scope": 7231,
                   "src": "1882:28:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -655,7 +655,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7164,
+                    "id": 7221,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1882:5:12",
@@ -668,12 +668,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7167,
+                  "id": 7224,
                   "mutability": "mutable",
                   "name": "cbdata",
                   "nameLocation": "1935:6:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7174,
+                  "scope": 7231,
                   "src": "1920:21:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -682,7 +682,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7166,
+                    "id": 7223,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1920:5:12",
@@ -695,12 +695,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7169,
+                  "id": 7226,
                   "mutability": "mutable",
                   "name": "ctx",
                   "nameLocation": "1966:3:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7174,
+                  "scope": 7231,
                   "src": "1951:18:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -709,7 +709,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7168,
+                    "id": 7225,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1951:5:12",
@@ -724,17 +724,17 @@
               "src": "1779:196:12"
             },
             "returnParameters": {
-              "id": 7173,
+              "id": 7230,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7172,
+                  "id": 7229,
                   "mutability": "mutable",
                   "name": "newCtx",
                   "nameLocation": "2023:6:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7174,
+                  "scope": 7231,
                   "src": "2010:19:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -743,7 +743,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7171,
+                    "id": 7228,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "2010:5:12",
@@ -757,7 +757,7 @@
               ],
               "src": "2009:21:12"
             },
-            "scope": 7247,
+            "scope": 7304,
             "src": "1749:282:12",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -765,13 +765,13 @@
           },
           {
             "documentation": {
-              "id": 7175,
+              "id": 7232,
               "nodeType": "StructuredDocumentation",
               "src": "2037:622:12",
               "text": " @dev Callback before a new agreement is updated.\n @param superToken The super token used for the agreement.\n @param agreementClass The agreement class address.\n @param agreementId The agreementId\n @param agreementData The agreement data (non-compressed)\n @param ctx The context data.\n @return cbdata A free format in memory data the app can use to pass\n          arbitary information to the after-hook callback.\n NOTE:\n - It will be invoked with `staticcall`, no state changes are permitted.\n - Only revert with a \"reason\" is permitted."
             },
             "functionSelector": "884d1f40",
-            "id": 7191,
+            "id": 7248,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -779,38 +779,38 @@
             "nameLocation": "2673:22:12",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7187,
+              "id": 7244,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7178,
+                  "id": 7235,
                   "mutability": "mutable",
                   "name": "superToken",
                   "nameLocation": "2717:10:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7191,
+                  "scope": 7248,
                   "src": "2705:22:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$6497",
+                    "typeIdentifier": "t_contract$_ISuperToken_$6554",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
-                    "id": 7177,
+                    "id": 7234,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 7176,
+                      "id": 7233,
                       "name": "ISuperToken",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 6497,
+                      "referencedDeclaration": 6554,
                       "src": "2705:11:12"
                     },
-                    "referencedDeclaration": 6497,
+                    "referencedDeclaration": 6554,
                     "src": "2705:11:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$6497",
+                      "typeIdentifier": "t_contract$_ISuperToken_$6554",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -818,12 +818,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7180,
+                  "id": 7237,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nameLocation": "2745:14:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7191,
+                  "scope": 7248,
                   "src": "2737:22:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -832,7 +832,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7179,
+                    "id": 7236,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2737:7:12",
@@ -846,12 +846,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7182,
+                  "id": 7239,
                   "mutability": "mutable",
                   "name": "agreementId",
                   "nameLocation": "2777:11:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7191,
+                  "scope": 7248,
                   "src": "2769:19:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -860,7 +860,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7181,
+                    "id": 7238,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2769:7:12",
@@ -873,12 +873,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7184,
+                  "id": 7241,
                   "mutability": "mutable",
                   "name": "agreementData",
                   "nameLocation": "2813:13:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7191,
+                  "scope": 7248,
                   "src": "2798:28:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -887,7 +887,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7183,
+                    "id": 7240,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "2798:5:12",
@@ -900,12 +900,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7186,
+                  "id": 7243,
                   "mutability": "mutable",
                   "name": "ctx",
                   "nameLocation": "2851:3:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7191,
+                  "scope": 7248,
                   "src": "2836:18:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -914,7 +914,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7185,
+                    "id": 7242,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "2836:5:12",
@@ -929,17 +929,17 @@
               "src": "2695:165:12"
             },
             "returnParameters": {
-              "id": 7190,
+              "id": 7247,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7189,
+                  "id": 7246,
                   "mutability": "mutable",
                   "name": "cbdata",
                   "nameLocation": "2921:6:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7191,
+                  "scope": 7248,
                   "src": "2908:19:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -948,7 +948,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7188,
+                    "id": 7245,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "2908:5:12",
@@ -962,7 +962,7 @@
               ],
               "src": "2907:21:12"
             },
-            "scope": 7247,
+            "scope": 7304,
             "src": "2664:265:12",
             "stateMutability": "view",
             "virtual": false,
@@ -970,13 +970,13 @@
           },
           {
             "documentation": {
-              "id": 7192,
+              "id": 7249,
               "nodeType": "StructuredDocumentation",
               "src": "2936:558:12",
               "text": " @dev Callback after a new agreement is updated.\n @param superToken The super token used for the agreement.\n @param agreementClass The agreement class address.\n @param agreementId The agreementId\n @param agreementData The agreement data (non-compressed)\n @param cbdata The data returned from the before-hook callback.\n @param ctx The context data.\n @return newCtx The current context of the transaction.\n NOTE:\n - State changes is permitted.\n - Only revert with a \"reason\" is permitted."
             },
             "functionSelector": "230dbd29",
-            "id": 7210,
+            "id": 7267,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -984,38 +984,38 @@
             "nameLocation": "3508:21:12",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7206,
+              "id": 7263,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7195,
+                  "id": 7252,
                   "mutability": "mutable",
                   "name": "superToken",
                   "nameLocation": "3551:10:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7210,
+                  "scope": 7267,
                   "src": "3539:22:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$6497",
+                    "typeIdentifier": "t_contract$_ISuperToken_$6554",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
-                    "id": 7194,
+                    "id": 7251,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 7193,
+                      "id": 7250,
                       "name": "ISuperToken",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 6497,
+                      "referencedDeclaration": 6554,
                       "src": "3539:11:12"
                     },
-                    "referencedDeclaration": 6497,
+                    "referencedDeclaration": 6554,
                     "src": "3539:11:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$6497",
+                      "typeIdentifier": "t_contract$_ISuperToken_$6554",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -1023,12 +1023,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7197,
+                  "id": 7254,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nameLocation": "3579:14:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7210,
+                  "scope": 7267,
                   "src": "3571:22:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1037,7 +1037,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7196,
+                    "id": 7253,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3571:7:12",
@@ -1051,12 +1051,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7199,
+                  "id": 7256,
                   "mutability": "mutable",
                   "name": "agreementId",
                   "nameLocation": "3611:11:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7210,
+                  "scope": 7267,
                   "src": "3603:19:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1065,7 +1065,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7198,
+                    "id": 7255,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "3603:7:12",
@@ -1078,12 +1078,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7201,
+                  "id": 7258,
                   "mutability": "mutable",
                   "name": "agreementData",
                   "nameLocation": "3647:13:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7210,
+                  "scope": 7267,
                   "src": "3632:28:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -1092,7 +1092,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7200,
+                    "id": 7257,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3632:5:12",
@@ -1105,12 +1105,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7203,
+                  "id": 7260,
                   "mutability": "mutable",
                   "name": "cbdata",
                   "nameLocation": "3685:6:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7210,
+                  "scope": 7267,
                   "src": "3670:21:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -1119,7 +1119,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7202,
+                    "id": 7259,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3670:5:12",
@@ -1132,12 +1132,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7205,
+                  "id": 7262,
                   "mutability": "mutable",
                   "name": "ctx",
                   "nameLocation": "3716:3:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7210,
+                  "scope": 7267,
                   "src": "3701:18:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -1146,7 +1146,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7204,
+                    "id": 7261,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3701:5:12",
@@ -1161,17 +1161,17 @@
               "src": "3529:196:12"
             },
             "returnParameters": {
-              "id": 7209,
+              "id": 7266,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7208,
+                  "id": 7265,
                   "mutability": "mutable",
                   "name": "newCtx",
                   "nameLocation": "3773:6:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7210,
+                  "scope": 7267,
                   "src": "3760:19:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1180,7 +1180,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7207,
+                    "id": 7264,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3760:5:12",
@@ -1194,7 +1194,7 @@
               ],
               "src": "3759:21:12"
             },
-            "scope": 7247,
+            "scope": 7304,
             "src": "3499:282:12",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1202,13 +1202,13 @@
           },
           {
             "documentation": {
-              "id": 7211,
+              "id": 7268,
               "nodeType": "StructuredDocumentation",
               "src": "3787:595:12",
               "text": " @dev Callback before a new agreement is terminated.\n @param superToken The super token used for the agreement.\n @param agreementClass The agreement class address.\n @param agreementId The agreementId\n @param agreementData The agreement data (non-compressed)\n @param ctx The context data.\n @return cbdata A free format in memory data the app can use to pass\n          arbitary information to the after-hook callback.\n NOTE:\n - It will be invoked with `staticcall`, no state changes are permitted.\n - Revert is not permitted."
             },
             "functionSelector": "5f9e7d77",
-            "id": 7227,
+            "id": 7284,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -1216,38 +1216,38 @@
             "nameLocation": "4396:25:12",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7223,
+              "id": 7280,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7214,
+                  "id": 7271,
                   "mutability": "mutable",
                   "name": "superToken",
                   "nameLocation": "4443:10:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7227,
+                  "scope": 7284,
                   "src": "4431:22:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$6497",
+                    "typeIdentifier": "t_contract$_ISuperToken_$6554",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
-                    "id": 7213,
+                    "id": 7270,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 7212,
+                      "id": 7269,
                       "name": "ISuperToken",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 6497,
+                      "referencedDeclaration": 6554,
                       "src": "4431:11:12"
                     },
-                    "referencedDeclaration": 6497,
+                    "referencedDeclaration": 6554,
                     "src": "4431:11:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$6497",
+                      "typeIdentifier": "t_contract$_ISuperToken_$6554",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -1255,12 +1255,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7216,
+                  "id": 7273,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nameLocation": "4471:14:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7227,
+                  "scope": 7284,
                   "src": "4463:22:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1269,7 +1269,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7215,
+                    "id": 7272,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4463:7:12",
@@ -1283,12 +1283,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7218,
+                  "id": 7275,
                   "mutability": "mutable",
                   "name": "agreementId",
                   "nameLocation": "4503:11:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7227,
+                  "scope": 7284,
                   "src": "4495:19:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1297,7 +1297,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7217,
+                    "id": 7274,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "4495:7:12",
@@ -1310,12 +1310,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7220,
+                  "id": 7277,
                   "mutability": "mutable",
                   "name": "agreementData",
                   "nameLocation": "4539:13:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7227,
+                  "scope": 7284,
                   "src": "4524:28:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -1324,7 +1324,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7219,
+                    "id": 7276,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "4524:5:12",
@@ -1337,12 +1337,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7222,
+                  "id": 7279,
                   "mutability": "mutable",
                   "name": "ctx",
                   "nameLocation": "4577:3:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7227,
+                  "scope": 7284,
                   "src": "4562:18:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -1351,7 +1351,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7221,
+                    "id": 7278,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "4562:5:12",
@@ -1366,17 +1366,17 @@
               "src": "4421:165:12"
             },
             "returnParameters": {
-              "id": 7226,
+              "id": 7283,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7225,
+                  "id": 7282,
                   "mutability": "mutable",
                   "name": "cbdata",
                   "nameLocation": "4647:6:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7227,
+                  "scope": 7284,
                   "src": "4634:19:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1385,7 +1385,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7224,
+                    "id": 7281,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "4634:5:12",
@@ -1399,7 +1399,7 @@
               ],
               "src": "4633:21:12"
             },
-            "scope": 7247,
+            "scope": 7304,
             "src": "4387:268:12",
             "stateMutability": "view",
             "virtual": false,
@@ -1407,13 +1407,13 @@
           },
           {
             "documentation": {
-              "id": 7228,
+              "id": 7285,
               "nodeType": "StructuredDocumentation",
               "src": "4661:544:12",
               "text": " @dev Callback after a new agreement is terminated.\n @param superToken The super token used for the agreement.\n @param agreementClass The agreement class address.\n @param agreementId The agreementId\n @param agreementData The agreement data (non-compressed)\n @param cbdata The data returned from the before-hook callback.\n @param ctx The context data.\n @return newCtx The current context of the transaction.\n NOTE:\n - State changes is permitted.\n - Revert is not permitted."
             },
             "functionSelector": "53c11f99",
-            "id": 7246,
+            "id": 7303,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -1421,38 +1421,38 @@
             "nameLocation": "5219:24:12",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7242,
+              "id": 7299,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7231,
+                  "id": 7288,
                   "mutability": "mutable",
                   "name": "superToken",
                   "nameLocation": "5265:10:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7246,
+                  "scope": 7303,
                   "src": "5253:22:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ISuperToken_$6497",
+                    "typeIdentifier": "t_contract$_ISuperToken_$6554",
                     "typeString": "contract ISuperToken"
                   },
                   "typeName": {
-                    "id": 7230,
+                    "id": 7287,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 7229,
+                      "id": 7286,
                       "name": "ISuperToken",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 6497,
+                      "referencedDeclaration": 6554,
                       "src": "5253:11:12"
                     },
-                    "referencedDeclaration": 6497,
+                    "referencedDeclaration": 6554,
                     "src": "5253:11:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ISuperToken_$6497",
+                      "typeIdentifier": "t_contract$_ISuperToken_$6554",
                       "typeString": "contract ISuperToken"
                     }
                   },
@@ -1460,12 +1460,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7233,
+                  "id": 7290,
                   "mutability": "mutable",
                   "name": "agreementClass",
                   "nameLocation": "5293:14:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7246,
+                  "scope": 7303,
                   "src": "5285:22:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1474,7 +1474,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7232,
+                    "id": 7289,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "5285:7:12",
@@ -1488,12 +1488,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7235,
+                  "id": 7292,
                   "mutability": "mutable",
                   "name": "agreementId",
                   "nameLocation": "5325:11:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7246,
+                  "scope": 7303,
                   "src": "5317:19:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1502,7 +1502,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7234,
+                    "id": 7291,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "5317:7:12",
@@ -1515,12 +1515,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7237,
+                  "id": 7294,
                   "mutability": "mutable",
                   "name": "agreementData",
                   "nameLocation": "5361:13:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7246,
+                  "scope": 7303,
                   "src": "5346:28:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -1529,7 +1529,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7236,
+                    "id": 7293,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "5346:5:12",
@@ -1542,12 +1542,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7239,
+                  "id": 7296,
                   "mutability": "mutable",
                   "name": "cbdata",
                   "nameLocation": "5399:6:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7246,
+                  "scope": 7303,
                   "src": "5384:21:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -1556,7 +1556,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7238,
+                    "id": 7295,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "5384:5:12",
@@ -1569,12 +1569,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7241,
+                  "id": 7298,
                   "mutability": "mutable",
                   "name": "ctx",
                   "nameLocation": "5430:3:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7246,
+                  "scope": 7303,
                   "src": "5415:18:12",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -1583,7 +1583,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7240,
+                    "id": 7297,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "5415:5:12",
@@ -1598,17 +1598,17 @@
               "src": "5243:196:12"
             },
             "returnParameters": {
-              "id": 7245,
+              "id": 7302,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7244,
+                  "id": 7301,
                   "mutability": "mutable",
                   "name": "newCtx",
                   "nameLocation": "5487:6:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7246,
+                  "scope": 7303,
                   "src": "5474:19:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1617,7 +1617,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 7243,
+                    "id": 7300,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "5474:5:12",
@@ -1631,14 +1631,14 @@
               ],
               "src": "5473:21:12"
             },
-            "scope": 7247,
+            "scope": 7304,
             "src": "5210:285:12",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 7248,
+        "scope": 7305,
         "src": "248:5249:12",
         "usedErrors": []
       }

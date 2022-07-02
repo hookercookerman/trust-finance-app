@@ -11,6 +11,8 @@ import {ITrustIDA} from "../interfaces/ITrustIDA.sol";
 
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
+error Emploee__not_in__List();
+
 contract TrustCFA is Ownable {
     IConstantFlowAgreementV1 private _cfa;
     ISuperfluid private _host;
@@ -51,7 +53,16 @@ contract TrustCFA is Ownable {
         bool isOneTime;
     }
 
-    mapping(address => address[]) employeeEmployers; //people paying an address
+    struct Updateables {
+        bool isUpdatable;
+        address[] _addresses;
+        int96[] _updates;
+    }
+
+    //addresses of the employer's employees to update streams.
+    mapping(address => Updateables) private _updatableEmployees;
+
+    mapping(address => address[]) private employeeEmployers; //people paying an address
 
     //addresses of people paid periodically
     address[] private periodicEmployees;
@@ -85,14 +96,11 @@ contract TrustCFA is Ownable {
      * @notice add a compny to the platform
      * @dev only callable by the contract admin
      * @param _payType: the type of payment the company gives ie. Installments or stream
-     * @param _companyAddress: the address of the company
      */
-    function _createCompany(
-        uint8 _payType /* address _companyAddress*/
-    ) external {
+    function _createCompany(uint8 _payType) external {
         if (_payType == 0) {
             s_companyInfo[msg.sender] = Company(
-                _companyAddress,
+                msg.sender,
                 true,
                 true,
                 false,
@@ -104,7 +112,7 @@ contract TrustCFA is Ownable {
         }
         if (_payType == 1) {
             s_companyInfo[msg.sender] = Company(
-                _companyAddress,
+                msg.sender,
                 true,
                 false,
                 true,
@@ -115,7 +123,7 @@ contract TrustCFA is Ownable {
             );
         } else {
             s_companyInfo[msg.sender] = Company(
-                _companyAddress,
+                msg.sender,
                 true,
                 false,
                 false,
@@ -244,6 +252,41 @@ contract TrustCFA is Ownable {
 
     //individual employee payment
     //approve certain addresses
+
+    function _prepareStreamUpdate(
+        address[] memory _employees,
+        int96[] memory _amounts
+    ) external {
+        Company storage company = s_companyInfo[msg.sender];
+        require(_employees.length == _amounts.length, "arrays !eq");
+        uint256 _length = _amounts.length;
+        uint256 _companyAddresses = s_companyEmployees[msg.sender].length;
+        require(_length <= s_companyEmployees[msg.sender].length); //@dev: can't update more addresses than yours
+        uint256 _counter;
+        for (uint256 i = 0; i < _length; ) {
+            address user = _employees[i];
+            for (uint256 j = 0; j < _companyAddresses; ) {
+                if (s_companyEmployees[msg.sender][j] == user) {
+                    _counter += 1;
+                }
+                unchecked {
+                    j++;
+                }
+            }
+            unchecked {
+                i++;
+            }
+        }
+        if (_counter == _length) {
+            _updatableEmployees[msg.sender] = Updateables(
+                true,
+                _employees,
+                _amounts
+            );
+        } else {
+            revert Emploee__not_in__List();
+        }
+    }
 
     function openStream(address _to, int96 _flowRate) external {
         _createFlow(_to, _flowRate);
@@ -393,5 +436,13 @@ contract TrustCFA is Ownable {
         returns (address[] memory)
     {
         return employeeEmployers[_employee];
+    }
+
+    function getUpdateables(address _employer)
+        external
+        view
+        returns (Updateables memory _updates)
+    {
+        _updates = _updatableEmployees[_employer];
     }
 }

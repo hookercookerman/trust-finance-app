@@ -232,21 +232,21 @@
     "absolutePath": "/home/phydy/.brownie/packages/phydy/sf-brownie@1.0.0/interfaces/tokens/ERC20WithTokenInfo.sol",
     "exportedSymbols": {
       "ERC20WithTokenInfo": [
-        6509
+        6566
       ],
       "IERC20": [
-        3448
+        3307
       ],
       "TokenInfo": [
-        7392
+        7449
       ]
     },
-    "id": 6510,
+    "id": 6567,
     "license": "AGPLv3",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6499,
+        "id": 6556,
         "literals": [
           "solidity",
           ">=",
@@ -259,20 +259,20 @@
       {
         "absolutePath": "/home/phydy/.brownie/packages/OpenZeppelin/openzeppelin-contracts@4.6.0/contracts/token/ERC20/IERC20.sol",
         "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
-        "id": 6501,
+        "id": 6558,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 6510,
-        "sourceUnit": 3449,
+        "scope": 6567,
+        "sourceUnit": 3308,
         "src": "61:70:18",
         "symbolAliases": [
           {
             "foreign": {
-              "id": 6500,
+              "id": 6557,
               "name": "IERC20",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 3448,
+              "referencedDeclaration": 3307,
               "src": "69:6:18",
               "typeDescriptions": {}
             },
@@ -284,20 +284,20 @@
       {
         "absolutePath": "/home/phydy/.brownie/packages/phydy/sf-brownie@1.0.0/interfaces/tokens/TokenInfo.sol",
         "file": "./TokenInfo.sol",
-        "id": 6503,
+        "id": 6560,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 6510,
-        "sourceUnit": 7393,
+        "scope": 6567,
+        "sourceUnit": 7450,
         "src": "132:42:18",
         "symbolAliases": [
           {
             "foreign": {
-              "id": 6502,
+              "id": 6559,
               "name": "TokenInfo",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 7392,
+              "referencedDeclaration": 7449,
               "src": "140:9:18",
               "typeDescriptions": {}
             },
@@ -311,25 +311,25 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 6505,
+              "id": 6562,
               "name": "IERC20",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3448,
+              "referencedDeclaration": 3307,
               "src": "525:6:18"
             },
-            "id": 6506,
+            "id": 6563,
             "nodeType": "InheritanceSpecifier",
             "src": "525:6:18"
           },
           {
             "baseName": {
-              "id": 6507,
+              "id": 6564,
               "name": "TokenInfo",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7392,
+              "referencedDeclaration": 7449,
               "src": "533:9:18"
             },
-            "id": 6508,
+            "id": 6565,
             "nodeType": "InheritanceSpecifier",
             "src": "533:9:18"
           }
@@ -338,23 +338,23 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 6504,
+          "id": 6561,
           "nodeType": "StructuredDocumentation",
           "src": "176:263:18",
           "text": " @title ERC20 token with token info interface\n @author Superfluid\n @dev Using abstract contract instead of interfaces because old solidity\n      does not support interface inheriting other interfaces\n solhint-disable-next-line no-empty-blocks"
         },
         "fullyImplemented": false,
-        "id": 6509,
+        "id": 6566,
         "linearizedBaseContracts": [
-          6509,
-          7392,
-          3448
+          6566,
+          7449,
+          3307
         ],
         "name": "ERC20WithTokenInfo",
         "nameLocation": "503:18:18",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 6510,
+        "scope": 6567,
         "src": "485:62:18",
         "usedErrors": []
       }
