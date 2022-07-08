@@ -6,6 +6,7 @@ import useMetaMask from "hooks/useMetaMask";
 import { BUSINESS_PATH } from "pages/business/routes/page-paths";
 import { INDIVIDUAL_PATHS } from "pages/personal/routes/page-paths";
 import useBoolean from "hooks/useBoolean";
+import Partners from "./Partners";
 
 export default function Hero({ isBusinessMode }) {
   const [connectWallet] = useMetaMask();
@@ -16,8 +17,9 @@ export default function Hero({ isBusinessMode }) {
   };
 
   return (
+    <div className="position-relative">
     <Container fluid className={`hero_bg ${ isBusinessMode ? "business_bg" : "personal_bg" }`}>
-      <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div className="row flex-lg-row-reverse align-items-center py-5">
         <Container className="ps-5">
           <Row className="ms-5 mt-5">
             <Col md={5} sm={12} className="z_10">
@@ -74,7 +76,7 @@ export default function Hero({ isBusinessMode }) {
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
-              <Row className="my-4 px-3">
+              <Row className="mb-5 px-3 py-5">
                 <Col>
                   <Button onClick={handleWalletConnect} disabled={!selectOption} className="w-100 rounded" variant="primary" size="lg">
                     Get Started
@@ -92,5 +94,7 @@ export default function Hero({ isBusinessMode }) {
         </Container>
       </div>
     </Container>
+    <Partners />
+    </div>
   );
 }

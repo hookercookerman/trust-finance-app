@@ -1,7 +1,6 @@
 import Advantages from "components/Home/Advantages";
 import Features from "components/Home/Features";
 import Hero from "components/Home/Hero";
-import Partners from "components/Home/Partners";
 import Pricing from "components/Home/Pricing";
 import HomepageContext from "Contexts/HomepageContext";
 import { useContext } from "react";
@@ -13,9 +12,8 @@ export default function HomeBody() {
   return (
     <>
       <Hero isBusinessMode={isBusinessMode} />
-      <Partners />
-      <Features isBusinessMode = {isBusinessMode}/>
       <Advantages />
+      <Features isBusinessMode={isBusinessMode} />
       <Pricing />
     </>
   );

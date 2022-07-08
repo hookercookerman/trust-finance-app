@@ -1,4 +1,4 @@
-import { Card, Col, Container, Row } from "react-bootstrap";
+import {Col, Container, Row } from "react-bootstrap";
 import PolygonLogo from "assets/images/polygon.png";
 import EthGlobalLogo from "assets/images/ethglobal.png";
 import ChainlinkLogo from "assets/images/chainlink.png";
@@ -7,7 +7,7 @@ import SuperfluidLogo from "assets/images/superfluid.png";
 const PartnerImages = [
   {
     id: 1,
-    image: ChainlinkLogo,
+    image: EthGlobalLogo,
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const PartnerImages = [
   },
   {
     id: 3,
-    image: EthGlobalLogo,
+    image: ChainlinkLogo,
   },
   {
     id: 4,
@@ -25,22 +25,18 @@ const PartnerImages = [
 
 export default function Partners() {
   return (
-    <Container>
+    <Container className = "bg-primary rounded-3 top-100 start-50 position-absolute translate-middle">
+      {/*
       <div className="text-center">
-        <h1 className="p-3 mt-5 text-primary">Partners</h1>
+        <h1 className="p-3 mt-5 text-light">Partners</h1>
       </div>
-      <Row className="d-flex px-3">
+      */
+}
+      <Row className="d-flex mb-0 align-items-center mx-auto p-3">
         {
           PartnerImages.map((partner) => (
-            <Col md={3} key={partner.id}>
-              <Card className="border-0">
-                <Card.Body>
-                  <Card.Img
-                    src={partner.image}
-                    className="partner_image"
-                  />
-                </Card.Body>
-              </Card>
+            <Col md={3} key={partner.id} className = "">
+              <img className="img-fluid"src={partner.image} alt=""/>
             </Col>
           ))
         }

@@ -46,10 +46,11 @@ export default function Features({isBusinessMode}) {
   ];
 
   return (
-    <Container className = "text-center">
-      <Row className="mt-5 ms-4">
+    <div className="bg-primary">
+    <Container className = "text-center p-4 bg-primary">
+      <Row className=" ms-4">
         <Col>
-          <p className="h1 text-primary p-5">Product Features</p>
+          <p className="h1 text-light p-5">Product Features</p>
           {/*
           <p>Trust Finance help you...</p>
           <ol className="ps-3">
@@ -127,5 +128,6 @@ export default function Features({isBusinessMode}) {
 */}
       </Row>
     </Container>
+    </div>
   );
 }

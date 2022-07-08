@@ -33,8 +33,8 @@ const advantageText = [
 
 export default function Advantages() {
   return (
-    <Container className="p-4 align-content-center items-center text-center">
-      <div className="top-50 end-50 text-center p-4 text-primary">
+    <Container className="p-4 align-content-center items-center text-center mt-5 py-5">
+      <div className="top-50 end-50 text-center p-4 text-primary mt-5 py-auto">
         <h1>Core Advantages</h1>
       </div>
       <Row className="d-flex p-5">
