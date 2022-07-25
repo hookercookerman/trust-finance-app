@@ -1,0 +1,1629 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluid",
+          "name": "host",
+          "type": "address"
+        },
+        {
+          "internalType": "contract ISuperToken[]",
+          "name": "tokens",
+          "type": "address[]"
+        }
+      ],
+      "name": "batchUpdateSuperTokenLogic",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluid",
+          "name": "host",
+          "type": "address"
+        },
+        {
+          "internalType": "contract ISuperfluidToken",
+          "name": "superToken",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "key",
+          "type": "bytes32"
+        }
+      ],
+      "name": "clearConfig",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluid",
+          "name": "host",
+          "type": "address"
+        },
+        {
+          "internalType": "contract ISuperfluidToken",
+          "name": "superToken",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "key",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getConfigAsAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "value",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluid",
+          "name": "host",
+          "type": "address"
+        },
+        {
+          "internalType": "contract ISuperfluidToken",
+          "name": "superToken",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "key",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getConfigAsUint256",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluid",
+          "name": "host",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "agreementClass",
+          "type": "address"
+        }
+      ],
+      "name": "registerAgreementClass",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluid",
+          "name": "host",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "newGov",
+          "type": "address"
+        }
+      ],
+      "name": "replaceGovernance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluid",
+          "name": "host",
+          "type": "address"
+        },
+        {
+          "internalType": "contract ISuperfluidToken",
+          "name": "superToken",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "key",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "value",
+          "type": "address"
+        }
+      ],
+      "name": "setConfig",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluid",
+          "name": "host",
+          "type": "address"
+        },
+        {
+          "internalType": "contract ISuperfluidToken",
+          "name": "superToken",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "key",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "setConfig",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluid",
+          "name": "host",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "hostNewLogic",
+          "type": "address"
+        },
+        {
+          "internalType": "address[]",
+          "name": "agreementClassNewLogics",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "superTokenFactoryNewLogic",
+          "type": "address"
+        }
+      ],
+      "name": "updateContracts",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "batchUpdateSuperTokenLogic(address,address[])": "42148deb",
+    "clearConfig(address,address,bytes32)": "640b6cc9",
+    "getConfigAsAddress(address,address,bytes32)": "8369a0f1",
+    "getConfigAsUint256(address,address,bytes32)": "80f70cba",
+    "registerAgreementClass(address,address)": "cadf8f85",
+    "replaceGovernance(address,address)": "44864b25",
+    "setConfig(address,address,bytes32,address)": "78707cb8",
+    "setConfig(address,address,bytes32,uint256)": "f79a8e63",
+    "updateContracts(address,address,address[],address)": "427942a4"
+  },
+  "ast": {
+    "absolutePath": "lib/protocol-monorepo/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
+    "id": 26479,
+    "exportedSymbols": {
+      "ISuperAgreement": [
+        25302
+      ],
+      "ISuperToken": [
+        25792
+      ],
+      "ISuperfluid": [
+        26355
+      ],
+      "ISuperfluidGovernance": [
+        26478
+      ],
+      "ISuperfluidToken": [
+        26752
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "35:2364:28",
+    "nodes": [
+      {
+        "id": 26357,
+        "nodeType": "PragmaDirective",
+        "src": "35:25:28",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 26359,
+        "nodeType": "ImportDirective",
+        "src": "62:56:28",
+        "absolutePath": "lib/protocol-monorepo/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperAgreement.sol",
+        "file": "./ISuperAgreement.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 26479,
+        "sourceUnit": 25303,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 26358,
+              "name": "ISuperAgreement",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 25302,
+              "src": "71:15:28",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 26361,
+        "nodeType": "ImportDirective",
+        "src": "119:48:28",
+        "absolutePath": "lib/protocol-monorepo/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperToken.sol",
+        "file": "./ISuperToken.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 26479,
+        "sourceUnit": 25793,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 26360,
+              "name": "ISuperToken",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 25792,
+              "src": "128:11:28",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 26363,
+        "nodeType": "ImportDirective",
+        "src": "168:59:28",
+        "absolutePath": "lib/protocol-monorepo/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluidToken.sol",
+        "file": "./ISuperfluidToken.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 26479,
+        "sourceUnit": 26753,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 26362,
+              "name": "ISuperfluidToken",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 26752,
+              "src": "177:16:28",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 26365,
+        "nodeType": "ImportDirective",
+        "src": "228:48:28",
+        "absolutePath": "lib/protocol-monorepo/packages/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol",
+        "file": "./ISuperfluid.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 26479,
+        "sourceUnit": 26356,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 26364,
+              "name": "ISuperfluid",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 26355,
+              "src": "237:11:28",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 26478,
+        "nodeType": "ContractDefinition",
+        "src": "351:2047:28",
+        "nodes": [
+          {
+            "id": 26375,
+            "nodeType": "FunctionDefinition",
+            "src": "471:87:28",
+            "documentation": {
+              "id": 26367,
+              "nodeType": "StructuredDocumentation",
+              "src": "390:76:28",
+              "text": " @dev Replace the current governance with a new governance"
+            },
+            "functionSelector": "44864b25",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "replaceGovernance",
+            "nameLocation": "480:17:28",
+            "parameters": {
+              "id": 26373,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26370,
+                  "mutability": "mutable",
+                  "name": "host",
+                  "nameLocation": "519:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26375,
+                  "src": "507:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                    "typeString": "contract ISuperfluid"
+                  },
+                  "typeName": {
+                    "id": 26369,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26368,
+                      "name": "ISuperfluid",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26355,
+                      "src": "507:11:28"
+                    },
+                    "referencedDeclaration": 26355,
+                    "src": "507:11:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                      "typeString": "contract ISuperfluid"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26372,
+                  "mutability": "mutable",
+                  "name": "newGov",
+                  "nameLocation": "541:6:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26375,
+                  "src": "533:14:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 26371,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "533:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "497:51:28"
+            },
+            "returnParameters": {
+              "id": 26374,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "557:0:28"
+            },
+            "scope": 26478,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 26384,
+            "nodeType": "FunctionDefinition",
+            "src": "623:100:28",
+            "documentation": {
+              "id": 26376,
+              "nodeType": "StructuredDocumentation",
+              "src": "564:54:28",
+              "text": " @dev Register a new agreement class"
+            },
+            "functionSelector": "cadf8f85",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "registerAgreementClass",
+            "nameLocation": "632:22:28",
+            "parameters": {
+              "id": 26382,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26379,
+                  "mutability": "mutable",
+                  "name": "host",
+                  "nameLocation": "676:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26384,
+                  "src": "664:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                    "typeString": "contract ISuperfluid"
+                  },
+                  "typeName": {
+                    "id": 26378,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26377,
+                      "name": "ISuperfluid",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26355,
+                      "src": "664:11:28"
+                    },
+                    "referencedDeclaration": 26355,
+                    "src": "664:11:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                      "typeString": "contract ISuperfluid"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26381,
+                  "mutability": "mutable",
+                  "name": "agreementClass",
+                  "nameLocation": "698:14:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26384,
+                  "src": "690:22:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 26380,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "690:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "654:59:28"
+            },
+            "returnParameters": {
+              "id": 26383,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "722:0:28"
+            },
+            "scope": 26478,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 26398,
+            "nodeType": "FunctionDefinition",
+            "src": "927:191:28",
+            "documentation": {
+              "id": 26385,
+              "nodeType": "StructuredDocumentation",
+              "src": "729:193:28",
+              "text": " @dev Update logics of the contracts\n @custom:note \n - Because they might have inter-dependencies, it is good to have one single function to update them all"
+            },
+            "functionSelector": "427942a4",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateContracts",
+            "nameLocation": "936:15:28",
+            "parameters": {
+              "id": 26396,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26388,
+                  "mutability": "mutable",
+                  "name": "host",
+                  "nameLocation": "973:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26398,
+                  "src": "961:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                    "typeString": "contract ISuperfluid"
+                  },
+                  "typeName": {
+                    "id": 26387,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26386,
+                      "name": "ISuperfluid",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26355,
+                      "src": "961:11:28"
+                    },
+                    "referencedDeclaration": 26355,
+                    "src": "961:11:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                      "typeString": "contract ISuperfluid"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26390,
+                  "mutability": "mutable",
+                  "name": "hostNewLogic",
+                  "nameLocation": "995:12:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26398,
+                  "src": "987:20:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 26389,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "987:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26393,
+                  "mutability": "mutable",
+                  "name": "agreementClassNewLogics",
+                  "nameLocation": "1036:23:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26398,
+                  "src": "1017:42:28",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 26391,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1017:7:28",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 26392,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1017:9:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26395,
+                  "mutability": "mutable",
+                  "name": "superTokenFactoryNewLogic",
+                  "nameLocation": "1077:25:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26398,
+                  "src": "1069:33:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 26394,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1069:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "951:157:28"
+            },
+            "returnParameters": {
+              "id": 26397,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1117:0:28"
+            },
+            "scope": 26478,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 26409,
+            "nodeType": "FunctionDefinition",
+            "src": "1242:111:28",
+            "documentation": {
+              "id": 26399,
+              "nodeType": "StructuredDocumentation",
+              "src": "1124:113:28",
+              "text": " @dev Update supertoken logic contract to the latest that is managed by the super token factory"
+            },
+            "functionSelector": "42148deb",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "batchUpdateSuperTokenLogic",
+            "nameLocation": "1251:26:28",
+            "parameters": {
+              "id": 26407,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26402,
+                  "mutability": "mutable",
+                  "name": "host",
+                  "nameLocation": "1299:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26409,
+                  "src": "1287:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                    "typeString": "contract ISuperfluid"
+                  },
+                  "typeName": {
+                    "id": 26401,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26400,
+                      "name": "ISuperfluid",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26355,
+                      "src": "1287:11:28"
+                    },
+                    "referencedDeclaration": 26355,
+                    "src": "1287:11:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                      "typeString": "contract ISuperfluid"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26406,
+                  "mutability": "mutable",
+                  "name": "tokens",
+                  "nameLocation": "1336:6:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26409,
+                  "src": "1313:29:28",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_contract$_ISuperToken_$25792_$dyn_calldata_ptr",
+                    "typeString": "contract ISuperToken[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 26404,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 26403,
+                        "name": "ISuperToken",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 25792,
+                        "src": "1313:11:28"
+                      },
+                      "referencedDeclaration": 25792,
+                      "src": "1313:11:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ISuperToken_$25792",
+                        "typeString": "contract ISuperToken"
+                      }
+                    },
+                    "id": 26405,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1313:13:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_contract$_ISuperToken_$25792_$dyn_storage_ptr",
+                      "typeString": "contract ISuperToken[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1277:66:28"
+            },
+            "returnParameters": {
+              "id": 26408,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1352:0:28"
+            },
+            "scope": 26478,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 26423,
+            "nodeType": "FunctionDefinition",
+            "src": "1426:141:28",
+            "documentation": {
+              "id": 26410,
+              "nodeType": "StructuredDocumentation",
+              "src": "1363:58:28",
+              "text": " @dev Set configuration as address value"
+            },
+            "functionSelector": "78707cb8",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setConfig",
+            "nameLocation": "1435:9:28",
+            "parameters": {
+              "id": 26421,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26413,
+                  "mutability": "mutable",
+                  "name": "host",
+                  "nameLocation": "1466:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26423,
+                  "src": "1454:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                    "typeString": "contract ISuperfluid"
+                  },
+                  "typeName": {
+                    "id": 26412,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26411,
+                      "name": "ISuperfluid",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26355,
+                      "src": "1454:11:28"
+                    },
+                    "referencedDeclaration": 26355,
+                    "src": "1454:11:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                      "typeString": "contract ISuperfluid"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26416,
+                  "mutability": "mutable",
+                  "name": "superToken",
+                  "nameLocation": "1497:10:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26423,
+                  "src": "1480:27:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluidToken_$26752",
+                    "typeString": "contract ISuperfluidToken"
+                  },
+                  "typeName": {
+                    "id": 26415,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26414,
+                      "name": "ISuperfluidToken",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26752,
+                      "src": "1480:16:28"
+                    },
+                    "referencedDeclaration": 26752,
+                    "src": "1480:16:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluidToken_$26752",
+                      "typeString": "contract ISuperfluidToken"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26418,
+                  "mutability": "mutable",
+                  "name": "key",
+                  "nameLocation": "1525:3:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26423,
+                  "src": "1517:11:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 26417,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1517:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26420,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "1546:5:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26423,
+                  "src": "1538:13:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 26419,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1538:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1444:113:28"
+            },
+            "returnParameters": {
+              "id": 26422,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1566:0:28"
+            },
+            "scope": 26478,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 26437,
+            "nodeType": "FunctionDefinition",
+            "src": "1640:141:28",
+            "documentation": {
+              "id": 26424,
+              "nodeType": "StructuredDocumentation",
+              "src": "1577:58:28",
+              "text": " @dev Set configuration as uint256 value"
+            },
+            "functionSelector": "f79a8e63",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setConfig",
+            "nameLocation": "1649:9:28",
+            "parameters": {
+              "id": 26435,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26427,
+                  "mutability": "mutable",
+                  "name": "host",
+                  "nameLocation": "1680:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26437,
+                  "src": "1668:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                    "typeString": "contract ISuperfluid"
+                  },
+                  "typeName": {
+                    "id": 26426,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26425,
+                      "name": "ISuperfluid",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26355,
+                      "src": "1668:11:28"
+                    },
+                    "referencedDeclaration": 26355,
+                    "src": "1668:11:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                      "typeString": "contract ISuperfluid"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26430,
+                  "mutability": "mutable",
+                  "name": "superToken",
+                  "nameLocation": "1711:10:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26437,
+                  "src": "1694:27:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluidToken_$26752",
+                    "typeString": "contract ISuperfluidToken"
+                  },
+                  "typeName": {
+                    "id": 26429,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26428,
+                      "name": "ISuperfluidToken",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26752,
+                      "src": "1694:16:28"
+                    },
+                    "referencedDeclaration": 26752,
+                    "src": "1694:16:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluidToken_$26752",
+                      "typeString": "contract ISuperfluidToken"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26432,
+                  "mutability": "mutable",
+                  "name": "key",
+                  "nameLocation": "1739:3:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26437,
+                  "src": "1731:11:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 26431,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1731:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26434,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "1760:5:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26437,
+                  "src": "1752:13:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 26433,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1752:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1658:113:28"
+            },
+            "returnParameters": {
+              "id": 26436,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1780:0:28"
+            },
+            "scope": 26478,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 26449,
+            "nodeType": "FunctionDefinition",
+            "src": "1835:120:28",
+            "documentation": {
+              "id": 26438,
+              "nodeType": "StructuredDocumentation",
+              "src": "1787:43:28",
+              "text": " @dev Clear configuration"
+            },
+            "functionSelector": "640b6cc9",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "clearConfig",
+            "nameLocation": "1844:11:28",
+            "parameters": {
+              "id": 26447,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26441,
+                  "mutability": "mutable",
+                  "name": "host",
+                  "nameLocation": "1877:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26449,
+                  "src": "1865:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                    "typeString": "contract ISuperfluid"
+                  },
+                  "typeName": {
+                    "id": 26440,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26439,
+                      "name": "ISuperfluid",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26355,
+                      "src": "1865:11:28"
+                    },
+                    "referencedDeclaration": 26355,
+                    "src": "1865:11:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                      "typeString": "contract ISuperfluid"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26444,
+                  "mutability": "mutable",
+                  "name": "superToken",
+                  "nameLocation": "1908:10:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26449,
+                  "src": "1891:27:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluidToken_$26752",
+                    "typeString": "contract ISuperfluidToken"
+                  },
+                  "typeName": {
+                    "id": 26443,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26442,
+                      "name": "ISuperfluidToken",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26752,
+                      "src": "1891:16:28"
+                    },
+                    "referencedDeclaration": 26752,
+                    "src": "1891:16:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluidToken_$26752",
+                      "typeString": "contract ISuperfluidToken"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26446,
+                  "mutability": "mutable",
+                  "name": "key",
+                  "nameLocation": "1936:3:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26449,
+                  "src": "1928:11:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 26445,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1928:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1855:90:28"
+            },
+            "returnParameters": {
+              "id": 26448,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1954:0:28"
+            },
+            "scope": 26478,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 26463,
+            "nodeType": "FunctionDefinition",
+            "src": "2024:151:28",
+            "documentation": {
+              "id": 26450,
+              "nodeType": "StructuredDocumentation",
+              "src": "1961:58:28",
+              "text": " @dev Get configuration as address value"
+            },
+            "functionSelector": "8369a0f1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getConfigAsAddress",
+            "nameLocation": "2033:18:28",
+            "parameters": {
+              "id": 26459,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26453,
+                  "mutability": "mutable",
+                  "name": "host",
+                  "nameLocation": "2073:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26463,
+                  "src": "2061:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                    "typeString": "contract ISuperfluid"
+                  },
+                  "typeName": {
+                    "id": 26452,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26451,
+                      "name": "ISuperfluid",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26355,
+                      "src": "2061:11:28"
+                    },
+                    "referencedDeclaration": 26355,
+                    "src": "2061:11:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                      "typeString": "contract ISuperfluid"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26456,
+                  "mutability": "mutable",
+                  "name": "superToken",
+                  "nameLocation": "2104:10:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26463,
+                  "src": "2087:27:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluidToken_$26752",
+                    "typeString": "contract ISuperfluidToken"
+                  },
+                  "typeName": {
+                    "id": 26455,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26454,
+                      "name": "ISuperfluidToken",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26752,
+                      "src": "2087:16:28"
+                    },
+                    "referencedDeclaration": 26752,
+                    "src": "2087:16:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluidToken_$26752",
+                      "typeString": "contract ISuperfluidToken"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26458,
+                  "mutability": "mutable",
+                  "name": "key",
+                  "nameLocation": "2132:3:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26463,
+                  "src": "2124:11:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 26457,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2124:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2051:85:28"
+            },
+            "returnParameters": {
+              "id": 26462,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26461,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "2168:5:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26463,
+                  "src": "2160:13:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 26460,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2160:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2159:15:28"
+            },
+            "scope": 26478,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 26477,
+            "nodeType": "FunctionDefinition",
+            "src": "2244:151:28",
+            "documentation": {
+              "id": 26464,
+              "nodeType": "StructuredDocumentation",
+              "src": "2181:58:28",
+              "text": " @dev Get configuration as uint256 value"
+            },
+            "functionSelector": "80f70cba",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getConfigAsUint256",
+            "nameLocation": "2253:18:28",
+            "parameters": {
+              "id": 26473,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26467,
+                  "mutability": "mutable",
+                  "name": "host",
+                  "nameLocation": "2293:4:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26477,
+                  "src": "2281:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                    "typeString": "contract ISuperfluid"
+                  },
+                  "typeName": {
+                    "id": 26466,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26465,
+                      "name": "ISuperfluid",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26355,
+                      "src": "2281:11:28"
+                    },
+                    "referencedDeclaration": 26355,
+                    "src": "2281:11:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluid_$26355",
+                      "typeString": "contract ISuperfluid"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26470,
+                  "mutability": "mutable",
+                  "name": "superToken",
+                  "nameLocation": "2324:10:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26477,
+                  "src": "2307:27:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluidToken_$26752",
+                    "typeString": "contract ISuperfluidToken"
+                  },
+                  "typeName": {
+                    "id": 26469,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 26468,
+                      "name": "ISuperfluidToken",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26752,
+                      "src": "2307:16:28"
+                    },
+                    "referencedDeclaration": 26752,
+                    "src": "2307:16:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluidToken_$26752",
+                      "typeString": "contract ISuperfluidToken"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26472,
+                  "mutability": "mutable",
+                  "name": "key",
+                  "nameLocation": "2352:3:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26477,
+                  "src": "2344:11:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 26471,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2344:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2271:85:28"
+            },
+            "returnParameters": {
+              "id": 26476,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26475,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "2388:5:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26477,
+                  "src": "2380:13:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 26474,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2380:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2379:15:28"
+            },
+            "scope": 26478,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISuperfluidGovernance",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 26366,
+          "nodeType": "StructuredDocumentation",
+          "src": "279:71:28",
+          "text": " @title Superfluid governance interface\n @author Superfluid"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          26478
+        ],
+        "name": "ISuperfluidGovernance",
+        "nameLocation": "361:21:28",
+        "scope": 26479,
+        "usedErrors": []
+      }
+    ],
+    "license": "AGPLv3"
+  },
+  "id": 28
+}
